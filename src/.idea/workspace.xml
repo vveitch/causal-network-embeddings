@@ -25,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/relational_ERM/effect_estimates/compute_ate.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -92,29 +92,6 @@
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="relational_ERM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="relational_ERM" type="462c0819:PsiDirectoryNode" />
-              <item name="effect_estimates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="relational_ERM" type="462c0819:PsiDirectoryNode" />
-              <item name="rerm_model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="relational_ERM" type="462c0819:PsiDirectoryNode" />
-              <item name="submit_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -170,7 +147,7 @@
   <component name="ToolWindowManager">
     <frame x="134" y="32" width="2426" height="1408" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.40537137" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40537137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -231,7 +208,7 @@
     <entry file="file://$PROJECT_DIR$/relational_ERM/effect_estimates/compute_ate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
