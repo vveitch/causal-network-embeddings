@@ -2,47 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="955726e7-8dbf-4b52-a799-77e307605709" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/adapter_ops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/adjacency_to_edge_list.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/array_ops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/batch_length_to_segment.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/biased_walk_dataset.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/concatenate_slices.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/dataset_ops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/induced_ego_sample.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/induced_subgraph.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/p_sampling_dataset.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/packed_to_sparse.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/random_walk_dataset.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/repeat.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/uniform_edge_dataset.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relational_ERM/dataset/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/relational_ERM/dataset/dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/relational_ERM/submit_scripts/run_model.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/relational_ERM/effect_estimates/compute_ate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/relational_ERM/rerm_model/run_classifier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -63,42 +45,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/relational_ERM/submit_scripts/run_model.sh" />
-        <option value="$PROJECT_DIR$/relational_ERM/data_cleaning/simulate_treatment_outcome_baseline.py" />
-        <option value="$PROJECT_DIR$/relational_ERM/data_cleaning/simulate_treatment_outcome_DEP.py" />
-        <option value="$PROJECT_DIR$/relational_ERM/effect_estimates/compute_ate.py" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="612" />
     <option name="y" value="204" />
     <option name="width" value="1400" />
     <option name="height" value="1028" />
   </component>
+  <component name="ProjectId" id="1Qnm7QRKL49se2NsA8bedYW3jpr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -144,76 +98,20 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="134" y="32" width="2426" height="1408" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40537137" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40537137" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="anonymized suppmat" />
     <MESSAGE value="slight cleaning" />
     <option name="LAST_COMMIT_MESSAGE" value="slight cleaning" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/relational_ERM/submit_scripts/run_model.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relational_ERM/rerm_model/run_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relational_ERM/effect_estimates/compute_ate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

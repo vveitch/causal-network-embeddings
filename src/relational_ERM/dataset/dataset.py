@@ -8,7 +8,6 @@ import time
 
 import numpy as np
 import tensorflow as tf
-import pandas as pd
 
 try:
     import mkl_random as random
@@ -160,7 +159,9 @@ def main():
     args = parser.parse_args()
 
     print("load the data")
-    graph_data, profiles = load_data_pokec('../../dat/networks/pokec/regional_subset')
+    graph_data, profiles = load_data_pokec('../dat/pokec/regional_subset')
+
+    print("number of edges {}".format(graph_data.edge_list.shape[0]))
 
     pokec_features = process_pokec_attributes(profiles)
 
