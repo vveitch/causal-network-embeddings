@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="955726e7-8dbf-4b52-a799-77e307605709" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/adapter_ops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/adjacency_to_edge_list.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/array_ops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/batch_length_to_segment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/biased_walk_dataset.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/concatenate_slices.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/dataset_ops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/induced_ego_sample.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/induced_subgraph.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/p_sampling_dataset.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/packed_to_sparse.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/random_walk_dataset.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/repeat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/relational_ERM/tensorflow_ops/uniform_edge_dataset.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/relational_ERM/dataset/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/relational_ERM/dataset/dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558638490107</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added missing files and fixed paths in dataset demo">
+      <created>1568416108348</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568416108348</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="anonymized suppmat" />
     <MESSAGE value="slight cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="slight cleaning" />
+    <MESSAGE value="added missing files and fixed paths in dataset demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added missing files and fixed paths in dataset demo" />
   </component>
 </project>
