@@ -10,30 +10,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>INIT</find>
-      <find>--simulated</find>
-      <find>$USER_HOME$/electric_mayhem_logs/scratch</find>
-      <find>$PROJECT_DIR$/../../../../../data</find>
-      <find>$PROJECT_DIR$/../../../../../</find>
-      <find>victor</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>~</replace>
-      <replace>../../dat</replace>
-      <replace>../../</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="612" />
-    <option name="y" value="204" />
-    <option name="width" value="1400" />
-    <option name="height" value="1028" />
   </component>
   <component name="ProjectId" id="1Qnm7QRKL49se2NsA8bedYW3jpr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -94,7 +72,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
