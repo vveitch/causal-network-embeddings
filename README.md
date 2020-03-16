@@ -48,5 +48,5 @@ of the causal effect.
 
 # Misc.
 The experiments in the paper initialize from node embeddings that were pre-trained using a purely unsupervised objective.
-To recreate the initialization embeddings, run `run_unsupervised.sh`. Then, uncomment `--init_checkpoint=$INIT_FILE` in `run_classifer.sh`
+To recreate the initialization embeddings, run `run_unsupervised.sh`. Then, uncomment `--init_checkpoint=$INIT_FILE` in `run_model.sh`
 
