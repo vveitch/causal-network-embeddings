@@ -478,13 +478,13 @@ def treatment_response_model_fn_builder(label_task_weight=0.01,
 
 
 
-        tf.logging.info("**** Trainable Variables ****")
-        for var in tvars:
-            init_string = ""
-            if var.name in initialized_variable_names:
-                init_string = ", *INIT_FROM_CKPT*"
-            tf.logging.info("  name = %s, shape = %s%s", var.name, var.shape,
-                            init_string)
+            tf.logging.info("**** Trainable Variables ****")
+            for var in tvars:
+                init_string = ""
+                if var.name in initialized_variable_names:
+                    init_string = ", *INIT_FROM_CKPT*"
+                tf.logging.info("  name = %s, shape = %s%s", var.name, var.shape,
+                                init_string)
 
         if mode == tf.estimator.ModeKeys.TRAIN:
 

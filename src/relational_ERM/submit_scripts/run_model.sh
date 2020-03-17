@@ -2,7 +2,7 @@
 
 INIT_DIR=../output/unsupervised_pokec_regional_embeddings/stable
 INIT_FILE=$INIT_DIR/model.ckpt-1000
-DATA_DIR=../dat/networks/pokec/regional_subset
+DATA_DIR=../dat/pokec/regional_subset
 OUTPUT_DIR=../output/local_test/
 PREDICT_FILE=~/networks/sim_from_covariate/covariateregion/beta110.0/seed0/test_results.tsv
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATA_DIR=../dat/networks/pokec/regional_subset
+DATA_DIR=../dat/pokec/regional_subset
 OUTPUT_DIR=../output/unsupervised_pokec_regional_embeddings/stable/
 
 rm -rf $OUTPUT_DIR
