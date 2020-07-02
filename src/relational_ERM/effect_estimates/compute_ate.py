@@ -1,11 +1,16 @@
+"""
+A set of helper functions to reproduce all of the tables in the paper.
+The inputs to this program are the outputs of running the rerm_model code with all possible
+simulation settings, and data splits
+"""
+
 import os
 import glob
 
 import numpy as np
 import pandas as pd
-import tensorflow as tf
 
-from semi_parametric_estimation.ate import ate_estimates, ates_from_atts
+from semi_parametric_estimation.ate import ate_estimates
 
 
 def ground_truth_and_naive_from_sim_log(sim_log):
@@ -21,6 +26,9 @@ def ground_truth_and_naive_from_sim_log(sim_log):
 
 
 def _make_descale(sim_log):
+    if sim_log is None:
+        return lambda outcome: outcome
+
     simulated = np.load(sim_log)
     y = simulated['outcomes']
 
@@ -34,7 +42,22 @@ def _make_descale(sim_log):
     return descale
 
 
-def ate_from_rerm_tsv(tsv_path, sim_log=None):
+def ate_from_rerm_tsv(tsv_path):
+    """
+    Takes the predicted expected outcomes and propensity scores for each vertex and computes
+    the corresponding average treatment effect on the graph, using the test data
+
+    Parameters
+    ----------
+    tsv_path path to tsv file output by RERM model
+    sim_log path to simulation log file if the data was simulated
+        NOTE: sim_log is only necessary because I (idiotically) normalized y for training but neglected to
+         denormalize it at prediction time
+
+    Returns
+    -------
+
+    """
     output = pd.read_csv(tsv_path, '\t')
     # output = convert_str_columns_to_float(output)
 
@@ -46,12 +69,6 @@ def ate_from_rerm_tsv(tsv_path, sim_log=None):
     in_test = output['in_test'].values == 1
     in_train = np.logical_not(in_test)
 
-    descale = _make_descale(sim_log)
-
-    y = descale(y)
-    q_t0 = descale(q_t0)
-    q_t1 = descale(q_t1)
-
     q_t0_test = q_t0[in_test]
     q_t1_test = q_t1[in_test]
     g_test = g[in_test]
@@ -62,15 +79,15 @@ def ate_from_rerm_tsv(tsv_path, sim_log=None):
     # bonuss_estimates = {}
     # for k in bonus_estimates:
     #     bonuss_estimates[k + '_bonus'] = bonus_estimates[k]
-    # all_estimates.update(bonuss_estimates)
+    # all_ate_estimates.update(bonuss_estimates)
 
-    # all_estimates = ate_estimates(q_t0, q_t1, g, t, y, truncate_level=0.03)
-    # all_estimates = ate_estimates(q_t0[in_train], q_t1[in_train], g[in_train], t[in_train], y[in_train],
+    # all_ate_estimates = ate_estimates(q_t0, q_t1, g, t, y, truncate_level=0.03)
+    # all_ate_estimates = ate_estimates(q_t0[in_train], q_t1[in_train], g[in_train], t[in_train], y[in_train],
     #                               truncate_level=0.03)
     all_estimates = ate_estimates(q_t0_test, q_t1_test, g_test, t_test, y_test, truncate_level=0.03)
 
     # print(tsv_path)
-    # print(all_estimates)
+    # print(all_ate_estimates)
 
     return all_estimates
 
@@ -90,7 +107,7 @@ def rerm_psi(output_dir, sim_log):
     estimates = []
     for data_file in data_files:
         try:
-            all_estimates = ate_from_rerm_tsv(data_file, sim_log=sim_log)
+            all_estimates = ate_from_rerm_tsv(data_file)
             # print(psi_estimates)
             estimates += [all_estimates]
         except:

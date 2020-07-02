@@ -1,9 +1,9 @@
 #!/bin/bash
 
 INIT_DIR=../output/unsupervised_pokec_regional_embeddings/stable
-INIT_FILE=$INIT_DIR/model.ckpt-1000
 DATA_DIR=../dat/pokec/regional_subset
-OUTPUT_DIR=../output/local_test/
+OUTPUT_DIR=../output/demo_output/
+INIT_FILE=$INIT_DIR/model.ckpt-1000
 PREDICT_FILE=~/networks/sim_from_covariate/covariateregion/beta110.0/seed0/test_results.tsv
 
 rm -rf $OUTPUT_DIR

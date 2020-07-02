@@ -40,9 +40,11 @@ The simulation setting is controlled by the `--simulated` flag.
 Options are attribute ('attribute') or propensity based ('propensity') simulation.
 The later can be used to reproduce the exogeneity experiments.
 
+The default parameters in the shell script use the region based simulation with Beta=1.0
+
 To reproduce the two-stage training, run with `embedding_trainable=false`
 
-Finally, the effect estimates can be reproduced by running `python -m effect_estimates.compute_ate`.
+Finally, the effect estimates can be reproduced by running `python -m effect_estimates.compute_single_ate tsv_file_path`.
 This takes in the predictions of the relational erm model (in tsv format) and passes them into downstream estimators
 of the causal effect.
 
