@@ -184,7 +184,7 @@ def main():
 
     np.random.seed(42) # use consistent seed for simulation
     if args.simulated == 'attribute':
-        treatments, outcomes, y_0, y_1, t_prob= \
+        treatments, outcomes, y_0, y_1, t_prob = \
             simulate_from_pokec_covariate(args.data_dir,
                                           covariate=args.covariate,
                                           beta0=1.0,
@@ -344,6 +344,21 @@ def main():
     if args.do_predict:
         tf.logging.info("***** Running prediction*****")
 
+        if not outcome_cat:
+            # undo the normalization of the outputs
+            m = outcomes.mean()
+            s = outcomes.std()
+
+            def descale(prediction):
+                prediction['outcome'] = prediction['outcome'] * s + m
+                prediction['expected_outcome_st_treatment'] = prediction['expected_outcome_st_treatment'] * s + m
+                prediction['expected_outcome_st_no_treatment'] = prediction['expected_outcome_st_no_treatment'] * s + m
+                return prediction
+        else:
+            # categorical Y wasn't rescaled, so no need to do this
+            def descale(prediction):
+                return prediction
+
         with tf.name_scope("evaluation_data"):
             predict_input_fn = make_no_graph_input_fn(graph_data, args, treatments, outcomes)
 
@@ -362,6 +377,7 @@ def main():
                 attribute_name for attribute_name in attribute_names) + "\n"
             writer.write(header)
             for prediction in result:
+                prediction = descale(prediction)
                 output_line = "\t".join(
                     str(prediction[attribute_name]) for attribute_name in attribute_names) + "\n"
                 writer.write(output_line)

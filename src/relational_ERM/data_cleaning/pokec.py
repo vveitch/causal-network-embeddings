@@ -305,7 +305,7 @@ def process_pokec_attributes(profiles):
     profiles['recent_login'] = (profiles['last_login'] < pd.Timestamp(2012, 5, 1))
     profiles['old_school'] = (profiles['registration'] < pd.Timestamp(2009, 1, 1))
 
-    profiles['scaled_registration'] = pd.to_timedelta(profiles['registration']) / pd.offsets.Day(1)
+    profiles['scaled_registration'] = (profiles['registration'] - profiles['registration'].min()) / pd.offsets.Day(1)
     profiles['scaled_registration'] = _standardize(profiles['scaled_registration'])
 
     profiles['scaled_age'] = _standardize(profiles['age'])
