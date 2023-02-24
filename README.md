@@ -1,3 +1,8 @@
+# Preamble
+ 
+If you're looking at this repository, there's a good chance you should instead look at the method described here: https://arxiv.org/abs/2205.08033
+(This second paper describes how to estimate contagion effects, which is the more obvious case for causal estimation with network structure) 
+
 # Introduction
 
 This repository contains software and data for "Using Embeddings to Correct for Unobserved Confounding in Networks
